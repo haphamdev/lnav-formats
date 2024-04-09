@@ -164,6 +164,10 @@
             "user_id": {
                 "kind": "string",
                 "hidden": true
+            },
+            "message_id": {
+                "kind": "string",
+                "hidden": true
             }
         }
     }
