@@ -73,6 +73,22 @@
       "method": {
         "kind": "string",
         "hidden": true
+      },
+      "exception": {
+        "kind": "json",
+        "hidden": true
+      },
+      "exception/type": {
+        "kind": "string",
+        "hidden": false
+      },
+      "exception/message": {
+        "kind": "string",
+        "hidden": false
+      },
+      "exception/stack_trace": {
+        "kind": "string",
+        "hidden": false
       }
     }
   }
