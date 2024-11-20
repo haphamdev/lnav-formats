@@ -1,0 +1,75 @@
+{
+  "$schema": "https://lnav.org/schemas/format-v1.schema.json",
+  "repeat_logs": {
+    "title": "Repeat symfony logs",
+    "description": "Log of Repeat Symfony",
+    "url": "repeat.gg",
+    "json": true,
+    "ordered-by-time": false,
+    "level-field": "log.level",
+    "body-field": "message",
+    "timestamp-field": "@timestamp",
+    "line-format": [
+      {
+        "field": "__timestamp__"
+      },
+      " ",
+      {
+        "field": "__level__",
+        "text-transform": "uppercase",
+        "min-width": 7,
+        "align": "left"
+      },
+      " ",
+      {
+        "field": "message"
+      }
+    ],
+    "value": {
+      "@timestamp": {
+        "kind": "string",
+        "hidden": false
+      },
+      "message": {
+        "kind": "string",
+        "hidden": false
+      },
+      "log.level": {
+        "kind": "string",
+        "hidden": false
+      },
+      "span_id": {
+        "kind": "string",
+        "hidden": true
+      },
+      "ecs.version": {
+        "kind": "string",
+        "hidden": true
+      },
+      "trace_id": {
+        "kind": "string",
+        "hidden": true
+      },
+      "trace_flags": {
+        "kind": "string",
+        "hidden": true
+      },
+      "route": {
+        "kind": "string",
+        "hidden": true
+      },
+      "route_parameters": {
+        "kind": "string",
+        "hidden": false
+      },
+      "request_urij": {
+        "kind": "string",
+        "hidden": false
+      },
+      "method": {
+        "kind": "string",
+        "hidden": false
+      }
+    }
+  }
+}
