@@ -60,15 +60,15 @@
       },
       "route_parameters": {
         "kind": "string",
-        "hidden": false
+        "hidden": true
       },
-      "request_urij": {
+      "request_uri": {
         "kind": "string",
-        "hidden": false
+        "hidden": true
       },
       "method": {
         "kind": "string",
-        "hidden": false
+        "hidden": true
       }
     }
   }
