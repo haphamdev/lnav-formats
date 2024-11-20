@@ -38,6 +38,10 @@
         "kind": "string",
         "hidden": false
       },
+      "log": {
+        "kind": "json",
+        "hidden": true
+      },
       "span_id": {
         "kind": "string",
         "hidden": true
@@ -59,7 +63,7 @@
         "hidden": true
       },
       "route_parameters": {
-        "kind": "string",
+        "kind": "json",
         "hidden": true
       },
       "request_uri": {
