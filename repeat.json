@@ -1,6 +1,6 @@
 {
   "$schema": "https://lnav.org/schemas/format-v1.schema.json",
-  "repeat_logs": {
+  "xygaming_symfony": {
     "title": "Repeat symfony logs",
     "description": "Log of Repeat Symfony",
     "url": "repeat.gg",
@@ -8,6 +8,7 @@
     "ordered-by-time": false,
     "level-field": "log.level",
     "body-field": "message",
+    "opid-field": "trace_id",
     "timestamp-field": "@timestamp",
     "line-format": [
       {
@@ -89,6 +90,31 @@
       "exception/stack_trace": {
         "kind": "string",
         "hidden": false
+      },
+      "error": {
+        "kind": "json",
+        "hidden": true
+      },
+      "limit": {
+        "kind": "integer",
+        "hidden": true
+      },
+      "offset": {
+        "kind": "integer",
+        "hidden": true
+      },
+      "jsonApiUrl": {
+        "kind": "string",
+        "hidden": false
+      }
+    },
+    "highlights": {
+      "hapham_logs": {
+        "color": "blue",
+        "background-color": "white",
+        "underline": false,
+        "blink": true,
+        "pattern": "(hapham|HAPHAM):"
       }
     }
   }
